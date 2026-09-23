@@ -1,0 +1,625 @@
+/* ================================
+   DISPATCH PAGE
+================================ */
+
+.dispatch-page {
+  min-height: 100vh;
+  padding: 42px 6%;
+  background: #f5f8fa;
+  color: #102a43;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.dispatch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.dispatch-breadcrumb {
+  margin: 0 0 14px;
+  color: #6d88a5;
+  font-size: 16px;
+}
+
+.dispatch-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #102a43;
+}
+
+.dispatch-title svg {
+  color: #08b58e;
+}
+
+.dispatch-subtitle {
+  margin: 10px 0 0;
+  color: #6d88a5;
+  font-size: 19px;
+}
+
+.dispatch-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  background: white;
+
+  border: 1px solid #d8e3ec;
+  border-radius: 14px;
+
+  color: #315577;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   STATISTICS
+================================ */
+
+.dispatch-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 24px;
+
+  margin-bottom: 30px;
+}
+
+.dispatch-stat-card {
+  min-height: 105px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 22px 25px;
+
+  background: white;
+
+  border: 1px solid #dce6ed;
+  border-radius: 16px;
+
+  box-sizing: border-box;
+}
+
+.dispatch-stat-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+}
+
+.dispatch-stat-icon.blue {
+  color: #3182e6;
+  background: #e6f0ff;
+}
+
+.dispatch-stat-icon.green {
+  color: #08b58e;
+  background: #e1f7f1;
+}
+
+.dispatch-stat-icon.orange {
+  color: #ed951d;
+  background: #fff0d9;
+}
+
+.dispatch-stat-icon.purple {
+  color: #7957e8;
+  background: #eee7ff;
+}
+
+.dispatch-stat-icon.completed {
+  color: #10a36e;
+  background: #e0f7eb;
+}
+
+.dispatch-stat-card span {
+  display: block;
+
+  color: #7188a2;
+
+  font-size: 15px;
+
+  margin-bottom: 5px;
+}
+
+.dispatch-stat-card strong {
+  display: block;
+
+  color: #102a43;
+
+  font-size: 30px;
+}
+
+
+/* ================================
+   MAIN CARD
+================================ */
+
+.dispatch-card {
+  background: white;
+
+  border: 1px solid #dce6ed;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+
+/* ================================
+   CARD HEADER
+================================ */
+
+.dispatch-card-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 26px 28px;
+
+  border-bottom: 1px solid #e5edf2;
+}
+
+.dispatch-card-header h2 {
+  margin: 0;
+
+  font-size: 23px;
+
+  color: #102a43;
+}
+
+.dispatch-card-header p {
+  margin: 7px 0 0;
+
+  color: #7890aa;
+
+  font-size: 15px;
+}
+
+
+/* ================================
+   FILTER BUTTONS
+================================ */
+
+.dispatch-filters {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.dispatch-filter {
+  padding: 10px 17px;
+
+  border: 1px solid #d8e3ec;
+
+  background: white;
+
+  border-radius: 9px;
+
+  color: #5f7691;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.dispatch-filter:hover {
+  background: #f0faf7;
+  border-color: #a9dfd1;
+}
+
+.dispatch-filter.active {
+  color: #08a982;
+
+  background: #e8f9f4;
+
+  border-color: #b8e7da;
+}
+
+
+/* ================================
+   JOB LIST
+================================ */
+
+.dispatch-job-list {
+  width: 100%;
+}
+
+.dispatch-job {
+  display: grid;
+
+  grid-template-columns:
+    130px
+    minmax(300px, 1fr)
+    190px
+    110px;
+
+  align-items: center;
+
+  gap: 20px;
+
+  min-height: 150px;
+
+  padding: 24px 28px;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #e7eef3;
+}
+
+.dispatch-job:last-child {
+  border-bottom: none;
+}
+
+
+/* ================================
+   TIME
+================================ */
+
+.dispatch-time {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #597590;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.dispatch-time svg {
+  color: #08b58e;
+}
+
+
+/* ================================
+   JOB DETAILS
+================================ */
+
+.dispatch-job-details {
+  min-width: 0;
+}
+
+.dispatch-job-id {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 7px;
+}
+
+.dispatch-job-id > span:first-child {
+  color: #00a37f;
+
+  font-weight: 700;
+
+  font-size: 14px;
+}
+
+.dispatch-job-details h3 {
+  margin: 0 0 5px;
+
+  font-size: 18px;
+
+  color: #102a43;
+}
+
+.dispatch-problem {
+  margin: 0 0 7px;
+
+  color: #627b95;
+
+  font-size: 15px;
+}
+
+.dispatch-location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #8194a9;
+
+  font-size: 14px;
+}
+
+.dispatch-location svg {
+  color: #8499ae;
+}
+
+
+/* ================================
+   STATUS
+================================ */
+
+.dispatch-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.dispatch-status.en-route {
+  color: #d8830b;
+  background: #fff0d7;
+}
+
+.dispatch-status.assigned {
+  color: #2874d8;
+  background: #e7f0ff;
+}
+
+.dispatch-status.on-site {
+  color: #079b73;
+  background: #e1f7f0;
+}
+
+.dispatch-status.completed {
+  color: #0b9b69;
+  background: #e2f7ec;
+}
+
+
+/* ================================
+   TECHNICIAN
+================================ */
+
+.dispatch-technician {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  min-width: 0;
+}
+
+.dispatch-avatar {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e2f7f2;
+
+  color: #08a982;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.technician-name {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.technician-name span {
+  color: #8295a9;
+
+  font-size: 12px;
+}
+
+.technician-name strong {
+  color: #102a43;
+
+  font-size: 15px;
+
+  white-space: nowrap;
+}
+
+
+/* ================================
+   TRACK BUTTON
+================================ */
+
+.track-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border: 1px solid #d5e3eb;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #08a982;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.track-button:hover {
+  background: #eafaf6;
+
+  border-color: #9edbcf;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1250px) {
+
+  .dispatch-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dispatch-job {
+    grid-template-columns:
+      110px
+      1fr
+      170px
+      100px;
+  }
+
+}
+
+
+@media (max-width: 950px) {
+
+  .dispatch-page {
+    padding: 30px 4%;
+  }
+
+  .dispatch-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dispatch-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dispatch-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .dispatch-job {
+    grid-template-columns: 100px 1fr;
+
+    gap: 18px;
+  }
+
+  .dispatch-technician {
+    grid-column: 2;
+  }
+
+  .track-button {
+    grid-column: 2;
+
+    width: fit-content;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .dispatch-page {
+    padding: 22px 15px;
+  }
+
+  .dispatch-title {
+    font-size: 32px;
+  }
+
+  .dispatch-subtitle {
+    font-size: 16px;
+  }
+
+  .dispatch-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dispatch-date {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dispatch-card-header {
+    padding: 20px;
+  }
+
+  .dispatch-filters {
+    width: 100%;
+  }
+
+  .dispatch-filter {
+    flex: 1;
+  }
+
+  .dispatch-job {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 22px 20px;
+
+    gap: 13px;
+  }
+
+  .dispatch-time {
+    order: 1;
+  }
+
+  .dispatch-job-details {
+    order: 2;
+  }
+
+  .dispatch-technician {
+    order: 3;
+  }
+
+  .track-button {
+    order: 4;
+
+    width: 100%;
+  }
+
+}
